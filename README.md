@@ -83,10 +83,11 @@ yarn add vue3-popper
 
 ## Events
 
-| Name           | Description               |
-| -------------- | ------------------------- |
-| `open:popper`  | When the Popper is opened |
-| `close:popper` | When the Popper is hidden |
+| Name             | Description                 |
+| ---------------- | --------------------------- |
+| `open:popper`    | When the Popper is opened   |
+| `close:popper`   | When the Popper is hidden   |
+| `created:popper` | Popper instance when opened |
 
 ## Slots
 
