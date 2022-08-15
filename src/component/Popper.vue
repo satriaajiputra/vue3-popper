@@ -46,7 +46,7 @@
   import { usePopper, useContent, useClickAway } from "@/composables";
   import Arrow from "./Arrow.vue";
 
-  const emit = defineEmits(["open:popper", "close:popper"]);
+  const emit = defineEmits(["open:popper", "close:popper", "created:popper"]);
   const slots = useSlots();
   const props = defineProps({
     /**
@@ -205,7 +205,7 @@
     show,
   } = toRefs(props);
 
-  const { isOpen, open, close } = usePopper({
+  const { isOpen, open, close, popperInstance } = usePopper({
     arrowPadding,
     emit,
     locked,
